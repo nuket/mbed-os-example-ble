@@ -30,6 +30,7 @@ static EventQueue eventQueue(
 );
 
 void periodicCallback(void) {
+    printf("Alive.\r\n");
     alivenessLED = !alivenessLED; /* Do blinky on LED1 while we're waiting for BLE events */
 }
 
